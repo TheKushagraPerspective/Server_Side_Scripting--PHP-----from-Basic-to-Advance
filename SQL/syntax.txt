@@ -1,0 +1,32 @@
+// table creation
+CREATE TABLE table_name (id int primary key , name varchar(30) // like that);
+
+2. insert
+insert into table_name values ('parameters' like (1 , 'kushagra');)
+
+3. delete 
+delete from table_name where id = 1(condition);
+
+4. truncate
+truncate table_name; // delete all rows in table_name
+
+5. drop
+drop table table_name; // delete table_name
+
+6. orderby
+SELECT * FROM table_name ORDER BY name ASC/DESC; // sort by name in ascending/desc
+
+7. groupby
+SELECT name , COUNT(*) FROM table_name GROUP BY name; // count number of rows for each name
+
+8. alter
+ALTER TABLE table_name ADD COLUMN name varchar(30); // add a new column to table_name
+
+9. like
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+% represents zero or more characters.
+_ represents a single character.
+SELECT * FROM table_name WHERE name LIKE '%kushagra%'; // select rows where name contains kushagra
+
+10. and/or 
+SELECT * FROM table_name WHERE name = 'kushagra' AND age = 20; // select rows where name is kushagra and age is 20
